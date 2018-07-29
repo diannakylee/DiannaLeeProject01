@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
         crossorigin="anonymous">
 
-    <link rel="stylesheet" href="../Project1/css/style.css">
+    <link rel="stylesheet" href="../Project1/styles/style.css">
     <title>Blog</title>
 </head>
 
@@ -116,7 +116,7 @@
                         <p>July 22, 2018</p>
                     </div>
                 </div>
-                <div class="relatedPost">
+                <div class="relatedPost relatedPost2">
                     <figure class="relatedImage">
                         <img src="../Project1/assets/blog-4.jpeg" alt="">
                     </figure>
@@ -137,42 +137,45 @@
             </div>
         </section>
         <section class="blogComments">
-            <h3>92 Comments</h3>
-            <div class="comment1">
-                <figure class="commentProfile">
-                    <img src="../Project1/assets/blog-6.jpeg" alt="">
-                </figure>
-                <div class="commentText">
-                    <p>Lucatony Avaro - Web Developer</p>
-                    <p>Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard
-                    greens nori. Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard.</p>
-                    <p>Jul 17,2015 at 15 hours ago</p>
+            <div class="wrapper">
+                <h3>92 Comments</h3>
+                <div class="comment1">
+                    <figure class="commentProfile">
+                        <img src="../Project1/assets/blog-6.jpeg" alt="">
+                    </figure>
+                    <div class="commentText">
+                        <p>Lucatony Avaro - Web Developer</p>
+                        <p>Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard
+                        greens nori. Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard.</p>
+                        <p>Jul 17,2015 at 15 hours ago</p>
+                    </div>
                 </div>
+                <div class="comment2">
+                    <figure class="commentProfile">
+                        <img src="../Project1/assets/blog-7.jpeg" alt="">
+                    </figure>
+                    <div class="commentText">
+                        <p>Lucatony Avaro - Web Developer</p>
+                        <p>Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed
+                            collard greens nori. Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard.</p>
+                        <p>Jul 17,2015 at 15 hours ago</p>
+                    </div>
+                </dir>
             </div>
-            <div class="comment2">
-                <figure class="commentProfile">
-                    <img src="../Project1/assets/blog-7.jpeg" alt="">
-                </figure>
-                <div class="commentText">
-                    <p>Lucatony Avaro - Web Developer</p>
-                    <p>Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed
-                        collard greens nori. Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard.</p>
-                    <p>Jul 17,2015 at 15 hours ago</p>
-                </div>
-            </dir>
         </section>
         <section class="blogCommentForm">
             <div class="wrapper">
                 <h3>Leave a Comment</h3>
+                <p>Your email address will not be published. Required fields are marked *.</p>
                 <div class="commentForm">
-                    <form action="">
-                        <label for="Name" class="visuallyhidden">Enter your first name:</label>
-                        <input type="Name" name="Name" placeholder="Name">
+                    <form class="commentFormBox">
+                        <label for="name" class="visuallyhidden">Enter your first name:</label>
+                        <input type="name" name="name" placeholder="Name*">
                         <label for="email" class="visuallyhidden">Enter your email:</label>
-                        <input type="email" name="email" placeholder="Email">
+                        <input type="email" name="email" placeholder="Email*">
                         <label for="email" class="visuallyhidden">Enter your email:</label>
                         <input type="website" name="website" placeholder="Your Website">
-                        <input type="text" name="text" placeholder="Comment">
+                        <textarea name="messages" placeholder="Comment*" cols="30" rows="4"></textarea>
                         <button>Submit</button>
                     </form>
                 </div>   
@@ -202,12 +205,13 @@
                 <div class="footerBox footerBox3">
                     <h3>Subscribe now</h3>
                     <p>Get all of our newest recipes immediately in your inbox!</p>
-                </div>
-                <div class="footerCopyRight">
-                    <p>Copyright 2015 by POLAR. All Rights Reserved.</p>
                     <div class="subscribeForm">
                     </div>
                 </div>
+            </div>
+            <div class="footerCopyRight">
+                <p>Copyright 2015 by POLAR. All Rights Reserved.</p>
+            </div>
         </footer>
 
 </body>
