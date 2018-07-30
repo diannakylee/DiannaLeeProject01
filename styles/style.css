@@ -29,6 +29,7 @@ html {
 body {
     font-family: "Raleway", serif;
     font-size: 1.6rem;
+    color: #333333;
 }
 
 p {
@@ -36,7 +37,7 @@ p {
     font-family: "Lora", serif;
 }
 
-figure, img, li, ul, h4 {
+figure, img, li, ul {
     margin: 0;
     padding: 0;
 }
@@ -56,7 +57,7 @@ h3 {
 
 .greenLine {
     border: 2px solid #64a604;
-    width: 15%;
+    width: 10%;
     margin: 0 auto;
 }
 
@@ -64,9 +65,10 @@ section {
     clear: both;
 }
 
-header {
-    max-width: 1280px;;
+i.fab:hover {
+    color: #64a604;
 }
+
 
 /* ALL NAVIGATION SECTION */
 
@@ -90,7 +92,6 @@ nav ul, nav li {
     padding: 1%; 
     text-transform: uppercase;
     text-align: right;
-    font-style: bold;
 }
 
 .mainHeaderMenu ul li {
@@ -100,10 +101,11 @@ nav ul, nav li {
 .mainHeaderMenu a {
     text-decoration: none;
     color: black;
+    font-style: bold;
 }
 
 .mainHeaderMenu a:hover {
-    color: crimson;
+    color: #64a604;
 }
 
 /* INDEX CSS STYLES */
@@ -113,7 +115,6 @@ nav ul, nav li {
     background-image: url(../assets/home-1.jpeg);
     height: 100vh;
     background-size: cover;
-    background-attachment: fixed;
 }
 
 .homeTestimonials {
@@ -124,23 +125,39 @@ nav ul, nav li {
 
 /* Does it make sense to use pseudo elements for the font awesome logos? */
 
+.recipeTypes {
+    background: #efefef;
+}
+
 .recipes {
     width: 50%;
     float: left;
+    background: transparent;
     overflow: hidden;
 }
 
 .recipes1 {
-    padding: 100px;
+    padding: 120px;
 }
 
-.recipes1Button p{
-    background: green;
-    text-align: center;
+.recipes1Button {
+    background: #64a604;
+    font-family: "Raleway";
+    text-transform: uppercase;
+    padding: 10px 15px;
+    color: white;
+    font-size: 13px;
+    border: none;
+    margin: 0 auto;
 }
 
 .recipes4 {
-    padding: 30px;
+    padding: 40px 30px 40px 30px;
+}
+
+.recipes4 h4 {
+    margin: 0;
+    padding: 0;
 }
 
 .recipeBox {
@@ -164,7 +181,7 @@ nav ul, nav li {
 /* Main Restaurants Section */
 
 .mainRestaurants {
-    padding: 100px;
+    padding: 120px 100px 100px 100px;
 }
 
 .restoSection {
@@ -173,20 +190,21 @@ nav ul, nav li {
 }
 
 .restoImage1 {
-    width: 60%;
+    width: 50%;
     margin: 0 auto;
 }
 
 .restoImage2 {
     width: 20%;
     position: absolute;
-    top: -30px;
-    right: 100px;
+    top: -73px;
+    right: 110px;
 }
 
 .mainRestaurantText {
     margin: 0 auto;
-    padding: 0 20%;
+    margin-top: 50px;
+    padding: 0 10%;
     text-align: center;
 }
 
@@ -207,16 +225,22 @@ nav ul, nav li {
     float: left;
 }
 
+/* .gallery li:hover {
+    
+} */
+
 
 /* Main Testimonials Section */
 
 .mainTestimonials {
     background-color: #dded9a;
-    padding: 180px 0;
+    padding: 120px 0;
+    text-align: center;
+    line-height: 20px;
 }
 
 blockquote {
-    padding: 30px;
+    padding: 20px;
     position: relative;
     font-family: "Lora";
     font-style: italic;
@@ -256,31 +280,100 @@ blockquote::after {
 
 footer {
     background-color: #2e2e2e;
-    padding: 80px 0px;
-    color: #606060;
+    color: #999999;
 }
 
-footer h2, footer h3 {
+footer p {
+    line-height: 20px;
+    font-size: 1.1rem;
+}
+
+footer h2, footer h4 {
     color: #ffffff;
     text-align: left;
+}
+
+footer h2 {
+    color: #64a604;
+}
+
+
+.footerTop {
+    padding: 40px 0px 30px 0;
 }
 
 .footerBox {
     float: left;
     padding: 20px 10px;
-    width: 33.3%;
+    width: calc((100% - 20px) / 3 )
+}
+
+.footerContent {
+    padding-top: 10px;
+}
+
+.footerBox2 {
+    margin: 0 10px;
+}
+
+.footerBottom {
+    background-color: #252525;
+    clear: both;
 }
 
 .footerCopyRight {
-    background-color: #252525;
     width: 100%;
     padding: 10px;
     clear: both;
 }
 
+.subscribeNow {
+    margin: 10px 0;
+}
+
+.footerSubscribeEmail {
+    background-color: #535353;
+    color:#efefef;
+    font-family: "Lora";
+    font-style: italic;
+    font-size: 1.2rem;
+    padding: 12px 15px;
+    border: none;
+    width: 85%;
+    float: left;
+}
+
+.footerSubscribeButton {
+    width: 15%;
+    background-color: #64a604;
+    color: white;
+    padding: 9px 0;
+    border: none;
+}
+
+.footerSubscribeEmail:focus{
+    border-bottom: 1px solid white; 
+}
+
+.footerSubscribeButton:hover {
+    background-color: white;
+    color: #64a604;
+}
+
+.socialFooter {
+    clear: left;
+    padding-top: 10px;
+    color: white;
+}
+
+.socialFooter i.fab {
+    padding-right: 10px;
+}
+
 .greyLine {
     width: 100%;
     border-bottom: 0.5px solid #606060;
+    padding: 5px 0;
 }
 
 .polar {
@@ -302,9 +395,17 @@ footer h2, footer h3 {
 
 /* Blog Body */
 
-.blogText, .blogAuthor {
-    padding: 5%;
+.blogAuthor {
+    background-color: #f6f6f6;
 }
+
+.blogAuthor, .blogText {
+    margin-bottom: 25px;
+}
+
+/* .blogText, .blogAuthor {
+    padding: 5%;
+} */
 
 .bloggerPhoto {
     width: 25%;
@@ -313,16 +414,12 @@ footer h2, footer h3 {
 
 .bloggerText {
     float: left;
-    background: #f6f6f6;
-    padding: 30px;
     width: 75%;
+    padding: 15px;
 }
 
 /* Blog Related Articles */
 
-.relatedArticles {
-    padding: 5%;
-}
 
 .relatedArticles h3:nth-child(1) {
     text-align: left;
@@ -343,10 +440,6 @@ footer h2, footer h3 {
 }
 
 /* Blog Content - Comments Section */
-
-.blogComments {
-    padding: 5%;
-}
 
 /* on this page, take off 5% padding.  Also add max width to wrapper. */
 
@@ -375,13 +468,102 @@ footer h2, footer h3 {
 
 
 
-
-
 /* CONTACT CSS STYLES*/
 
 .contactPage {
     background-image: url(../assets/contact-1.jpeg);
     height: 70vh;
     background-size: cover;
-    
+}
+
+.contactForm h3 {
+    text-align: left;
+}
+
+.contactDetails h4 {
+    padding-bottom: 10px;
+}
+
+.contactLeft, .contactRight {
+    float: left;
+    padding: 50px 0 50px 0;
+}
+
+.contactLeft {
+    width: 60%;
+}
+
+.contactRight {
+    width: 40%;
+    background: #f6f6f6;
+}
+
+.contactCommentForm {
+    background: transparent;
+    float: right;
+    width: 60%;
+    padding: 0 20px;
+    color: #252525;
+}
+
+#contactForm input, #contactForm textarea{
+    border: none;
+    background-color: #f6f6f6;
+    color: #999999;
+    margin-bottom: 15px;
+    font-size: 10px;
+    font-family: "Lora";
+    padding: 15px;
+}
+
+#contactForm input[type=name] {
+    margin-right: 1%;
+}
+
+#contactForm input[type=name], #contactForm input[type=email]{
+    width: 49%;
+}
+
+#contactForm input[type=subject] {
+    width: 100%;
+    margin-right: 10px;
+}
+
+#contactForm input[type=text] {
+    width: 100%;
+}
+
+#contactForm textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    color: #999999;
+    resize: none;
+}
+
+#contactForm button {
+    border: none;
+    background: transparent;
+    color: #64a604;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 10px;
+}
+
+#contactForm button:hover {
+    border: 2px solid #f6f6f6;
+}
+
+.contactDetails {
+    width: 50%;
+    padding-left: 20px;
+    line-height: 20px;
+}
+
+/* .hours p {
+    line-height: 12px;
+} */
+
+.hours p:nth-child(3), .contactInfo p {
+    color: #999999;
 }

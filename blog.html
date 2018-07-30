@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i|Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700|Raleway:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
         crossorigin="anonymous">
 
@@ -19,28 +19,42 @@
             <div class="menuBarLogo">
                 <h1>Delicious</h1>
             </div>
-            <nav class="mainHeaderMenu blogMenu">
+            <nav class="mainHeaderMenu">
                 <ul>
                     <li>
-                        <a href="#">home</a>
+                        <a href="index.html">
+                            <h4>home</h4>
+                        </a>
                     </li>
                     <li>
-                        <a href="#">about</a>
+                        <a href="#">
+                            <h4>about</h4>
+                        </a>
                     </li>
                     <li>
-                        <a href="#">recipes</a>
+                        <a href="#">
+                            <h4>recipes</h4>
+                        </a>
                     </li>
                     <li>
-                        <a href="#">nutrition</a>
+                        <a href="#">
+                            <h4>nutrition</h4>
+                        </a>
                     </li>
                     <li>
-                        <a href="#">blog</a>
+                        <a href="blog.html">
+                            <h4>blog</h4>
+                        </a>
                     </li>
                     <li>
-                        <a href="#">shop</a>
+                        <a href="#">
+                            <h4>shop</h4>
+                        </a>
                     </li>
                     <li>
-                        <a href="#">contact</a>
+                        <a href="contact.html">
+                            <h4>contact</h4>
+                        </a>
                     </li>
                     <li>
                         <a href="#">
@@ -58,7 +72,7 @@
     </header>
     <main>
         <section class="blogBody article1">
-            <div class="wrapper">
+            <div class="wrapper clearfix">
                 <div class="blogText">
                     <h2>Pineapple Chicken</h2>
                     <h6>Posted on...</h6>
@@ -89,7 +103,7 @@
                     
                        
                 </div>
-                <div class="blogAuthor">
+                <div class="blogAuthor clearfix">
                     <figure class="bloggerPhoto">
                         <img src="../Project1/assets/blog-2.jpeg" alt="">
                     </figure>
@@ -182,37 +196,65 @@
             </div>
         </section>
     </main>
-        <footer>
-            <div class="wrapper clearfix">
-                <div class="footerBox footerBox1">
-                    <h2>Delicious</h2>
+    <footer>
+        <div class="footerTop wrapper clearfix">
+            <div class="footerBox footerBox1">
+                <h2>Delicious</h2>
+                <div class="footerContent">
                     <p>Soko radicchio bunya nuts gram dulse silver beet parsnip napa cabbage lotus root sea lettuce brussels sprout
-                        cabbage.
-                    </p>
-                    <p>A delicious restaurant Toronto, Ontario</p> 
+                        cabbage.</p>
+                    <div class="greyLine"></div>
+                    <p>A delicious restaurant</p>
+                    <p>Toronto, Ontario</p>
+                    <div class="greyLine"></div>
                     <p>yum@food.com</p>
+                    <div class="greyLine"></div>
                     <p>+1 234 567 8910</p>
                 </div>
-                <div class="footerBox footerBox2">
-                    <h3>Recent Posts</h3>
+            </div>
+            <div class="footerBox footerBox2">
+                <h4>Recent Posts</h4>
+                <div class="footerContent">
                     <p>Beetroot water spinach okra water</p>
+                    <div class="greyLine"></div>
                     <p>Chestnut ricebean pea catsear courgette</p>
+                    <div class="greyLine"></div>
                     <p>Summer purslane spinach arugula pea</p>
+                    <div class="greyLine"></div>
                     <p>Tatsoi aubergine spring onion bush</p>
+                    <div class="greyLine"></div>
                     <p>Tomato kale radicchio turnip chicory</p>
+                    <div class="greyLine"></div>
                     <p>Salsify pea sprouts fava bean</p>
                 </div>
-                <div class="footerBox footerBox3">
-                    <h3>Subscribe now</h3>
+            </div>
+            <div class="footerBox footerBox3">
+                <h4>Subscribe now</h4>
+                <div class="footerContent">
                     <p>Get all of our newest recipes immediately in your inbox!</p>
-                    <div class="subscribeForm">
+                    <div class="subscribeNow">
+                        <label for "subscribeEmail" class="visuallyhidden">Email</label>
+                        <input type="text" class="footerSubscribeEmail" name="footerSubscribeEmail" placeholder="Enter your Email">
+                        <button class="footerSubscribeButton">
+                            <i class="fas fa-long-arrow-alt-right"></i>
+                        </button>
+                    </div>
+                    <div class="greyLine"></div>
+                    <div class="socialFooter">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
                     </div>
                 </div>
             </div>
-            <div class="footerCopyRight">
-                <p>Copyright 2015 by POLAR. All Rights Reserved.</p>
+        </div>
+        <div class="footerBottom">
+            <div class="footerCopyRight wrapper">
+                <p>Copyright 2015 by
+                    <span class="polar">POLAR</span>. All Rights Reserved.</p>
             </div>
-        </footer>
+        </div>
+    </footer>
 
 </body>
 

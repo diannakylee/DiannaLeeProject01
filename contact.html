@@ -5,10 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i|Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700|Raleway:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
         crossorigin="anonymous">
-
     <link rel="stylesheet" href="../Project1/styles/style.css">
     <title>Contact</title>
 </head>
@@ -22,25 +21,39 @@
             <nav class="mainHeaderMenu">
                 <ul>
                     <li>
-                        <a href="#">home</a>
+                        <a href="index.html">
+                            <h4>home</h4>
+                        </a>
                     </li>
                     <li>
-                        <a href="#">about</a>
+                        <a href="#">
+                            <h4>about</h4>
+                        </a>
                     </li>
                     <li>
-                        <a href="#">recipes</a>
+                        <a href="#">
+                            <h4>recipes</h4>
+                        </a>
                     </li>
                     <li>
-                        <a href="#">nutrition</a>
+                        <a href="#">
+                            <h4>nutrition</h4>
+                        </a>
                     </li>
                     <li>
-                        <a href="#">blog</a>
+                        <a href="blog.html">
+                            <h4>blog</h4>
+                        </a>
                     </li>
                     <li>
-                        <a href="#">shop</a>
+                        <a href="#">
+                            <h4>shop</h4>
+                        </a>
                     </li>
                     <li>
-                        <a href="#">contact</a>
+                        <a href="contact.html">
+                            <h4>contact</h4>
+                        </a>
                     </li>
                     <li>
                         <a href="#">
@@ -58,31 +71,37 @@
     </header>
     <main>
         <section class="contactForm">
-            <div class="wrapper">
-                <h3>Drop us a line</h3>
-                <div class="commentForm">
-                    <form action="">
-                        <label for="Name" class="visuallyhidden">Enter your first name:</label>
-                        <input type="Name" name="Name" placeholder="Name">
+            <div class="contactLeft">              
+                <div class="contactCommentForm">
+                    <h3>Drop us a line</h3>
+                    <form class="contactPageForm" id="contactForm">
+                        <label for="name" class="visuallyhidden">Enter your first name:</label>
+                        <input type="name" name="Name" placeholder="Your name">
                         <label for="email" class="visuallyhidden">Enter your email:</label>
-                        <input type="email" name="email" placeholder="Email">
-                        <label for="email" class="visuallyhidden">Enter your email:</label>
-                        <input type="website" name="website" placeholder="Your Website">
-                        <input type="text" name="text" placeholder="Comment">
-                        <button>Send Message</button>
+                        <input type="email" name="email" placeholder="Your email">
+                        <label for="subject" class="visuallyhidden">Subject</label>
+                        <input type="subject" name="website" placeholder="Subject">
+                        <textarea name="contactFormText" id="contactFormText">Message</textarea>
+                        <button>SEND MESSAGE <i class="fas fa-long-arrow-alt-right"></i></button>
                     </form>
                 </div>
+            </div>
+            <div class="contactRight">
                 <div class="contactDetails">
                     <h3>Contact Details</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptatum numquam nostrum neque consequatur vero, mollitia deleniti vel eius fugiat?</p>
-                    <h2>Working Hours</h2>
-                    <p>Mon-Fri</p>
-                    <p>Not working Saturday and Sunday</p>
-                    <h2>Contact Info</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <div class="hours">
+                        <h4>Working Hours</h4>
+                        <p><strong>MON-FRI: </strong>08:30am - 05:30pm</p>
+                        <p>Not working Saturday and Sunday !</p>
+                    </div>
+                    <div class="contactInfo">
+                        <h4>Contact Info</h4>
+                        <p>A delicious restaurant</p>
+                        <p>Toronto, Ontario</p>
+                        <p>yum@food.com</p>
+                        <p>+1 234 567 8910</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -93,34 +112,63 @@
         </section>
     </main>
     <footer>
-        <div class="wrapper clearfix">
+        <div class="footerTop wrapper clearfix">
             <div class="footerBox footerBox1">
                 <h2>Delicious</h2>
-                <p>Soko radicchio bunya nuts gram dulse silver beet parsnip napa cabbage lotus root sea lettuce brussels sprout
-                    cabbage.</p>
-                <p>A delicious restaurant Toronto, Ontario</p> 
-                <p>yum@food.com</p>
-                <p>+1 234 567 8910</p>
-            </div>
-            <div class="footerBox footerBox2">
-                <h3>Recent Posts</h3>
-                <p>Beetroot water spinach okra water</p>
-                <p>Chestnut ricebean pea catsear courgette</p>
-                <p>Summer purslane spinach arugula pea</p>
-                <p>Tatsoi aubergine spring onion bush</p>
-                <p>Tomato kale radicchio turnip chicory</p>
-                <p>Salsify pea sprouts fava bean</p>
-            </div>
-            <div class="footerBox footerBox3">
-                <h3>Subscribe now</h3>
-                <p>Get all of our newest recipes immediately in your inbox!</p>
-            </div>
-            <div class="footerCopyRight">
-                <p>Copyright 2015 by POLAR. All Rights Reserved.</p>
-                <div class="subscribeForm">
-                    < </div>
+                <div class="footerContent">
+                    <p>Soko radicchio bunya nuts gram dulse silver beet parsnip napa cabbage lotus root sea lettuce brussels sprout
+                        cabbage.</p>
+                    <div class="greyLine"></div>
+                    <p>A delicious restaurant</p>
+                    <p>Toronto, Ontario</p>
+                    <div class="greyLine"></div>
+                    <p>yum@food.com</p>
+                    <div class="greyLine"></div>
+                    <p>+1 234 567 8910</p>
                 </div>
             </div>
+            <div class="footerBox footerBox2">
+                <h4>Recent Posts</h4>
+                <div class="footerContent">
+                    <p>Beetroot water spinach okra water</p>
+                    <div class="greyLine"></div>
+                    <p>Chestnut ricebean pea catsear courgette</p>
+                    <div class="greyLine"></div>
+                    <p>Summer purslane spinach arugula pea</p>
+                    <div class="greyLine"></div>
+                    <p>Tatsoi aubergine spring onion bush</p>
+                    <div class="greyLine"></div>
+                    <p>Tomato kale radicchio turnip chicory</p>
+                    <div class="greyLine"></div>
+                    <p>Salsify pea sprouts fava bean</p>
+                </div>
+            </div>
+            <div class="footerBox footerBox3">
+                <h4>Subscribe now</h4>
+                <div class="footerContent">
+                    <p>Get all of our newest recipes immediately in your inbox!</p>
+                    <div class="subscribeNow">
+                        <label for "subscribeEmail" class="visuallyhidden">Email</label>
+                        <input type="text" class="footerSubscribeEmail" name="footerSubscribeEmail" placeholder="Enter your Email">
+                        <button class="footerSubscribeButton">
+                            <i class="fas fa-long-arrow-alt-right"></i>
+                        </button>
+                    </div>
+                    <div class="greyLine"></div>
+                    <div class="socialFooter">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footerBottom">
+            <div class="footerCopyRight wrapper">
+                <p>Copyright 2015 by
+                    <span class="polar">POLAR</span>. All Rights Reserved.</p>
+            </div>
+        </div>
     </footer>
 
 </body>
