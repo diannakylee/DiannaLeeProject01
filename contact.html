@@ -12,7 +12,7 @@
     <title>Contact</title>
 </head>
 
-<body>
+<body class="contact">
     <header class="contactPage">
         <div class="menuBar">
             <div class="menuBarLogo">
@@ -76,13 +76,13 @@
                     <h3>Drop us a line</h3>
                     <form class="contactPageForm" id="contactForm">
                         <label for="name" class="visuallyhidden">Enter your first name:</label>
-                        <input type="name" name="Name" placeholder="Your name">
+                        <input type="name" name="Name" placeholder="Your name" required=true>
                         <label for="email" class="visuallyhidden">Enter your email:</label>
-                        <input type="email" name="email" placeholder="Your email">
+                        <input type="email" name="email" placeholder="Your email" required=true>
                         <label for="subject" class="visuallyhidden">Subject</label>
                         <input type="subject" name="website" placeholder="Subject">
-                        <textarea name="contactFormText" id="contactFormText">Message</textarea>
-                        <button>SEND MESSAGE <i class="fas fa-long-arrow-alt-right"></i></button>
+                        <textarea name="contactFormText" id="contactFormText" placeholder="Message" required=true></textarea>
+                        <button><p>SEND MESSAGE <i class="fas fa-long-arrow-alt-right"></i></p></button>
                     </form>
                 </div>
             </div>

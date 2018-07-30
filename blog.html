@@ -13,7 +13,7 @@
     <title>Blog</title>
 </head>
 
-<body>
+<body class="blog">
     <header class="blogPageHeader">
         <div class="menuBar">
             <div class="menuBarLogo">
@@ -74,8 +74,10 @@
         <section class="blogBody article1">
             <div class="wrapper clearfix">
                 <div class="blogText">
-                    <h2>Pineapple Chicken</h2>
-                    <h6>Posted on...</h6>
+                    <div class="blogTextHeader">
+                        <h2>Pineapple Chicken</h2>
+                        <p>Posted July 11, 2018 | By Admin | in Recipes</p>
+                    </div>
                     <p>Morbi et accumsan est, non convallis metus. Etiam faucibus, leo et scelerisque facilisis, magna erat dictum nibh, vel congue
                     tortor massa vitae magna.
                     </p>
@@ -91,17 +93,15 @@
                     <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip
                     leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut
                     pea sierra leone bologi leek soko chicory celtuce</p>
-                    <div class="blogDottedLine"></div>
-                    <p><span class="blogBold">Tags: </span>Recipes, Chicken, Pineapple, Mexican</p>
+                </div>
+                <div class="blogTags">
+                    <p><span class="blogBold">Tags:   </span> <a href="#">Recipes</a> , <a href="#">Chicken</a> , <a href="#">Pineapple</a> , <a href="#">Mexican</a> </p>
                     <p>
-                        <span class="blogBold">Share: </span>
+                        <span class="blogBold">Share:  </span>
                         <i class="fab fa-facebook-f"></i>
                         <i class="fab fa-twitter"></i>
                         <i class="fab fa-instagram"></i>
                     </p>
-                    <div class="blogDottedLine"></div>
-                    
-                       
                 </div>
                 <div class="blogAuthor clearfix">
                     <figure class="bloggerPhoto">
@@ -119,15 +119,15 @@
             </div>
         </section>
         <section class="relatedArticles">
-            <div class="wrapper">
+            <div class="wrapper clearfix">
                 <h3>Related Posts</h3>
                 <div class="relatedPost">
                     <figure class="relatedImage">
                         <img src="../Project1/assets/blog-3.jpeg" alt="">
                     </figure>
                     <div class="relatedText">
-                        <h3>How to bake the perfect cake</h3>
-                        <p>July 22, 2018</p>
+                        <h4>How to bake the perfect cake</h4>
+                        <p>July 18, 2018 | by <strong>Admin</strong> | in <strong>Recipes</strong></p>
                     </div>
                 </div>
                 <div class="relatedPost relatedPost2">
@@ -135,7 +135,7 @@
                         <img src="../Project1/assets/blog-4.jpeg" alt="">
                     </figure>
                     <div class="relatedText">
-                        <h3>How to bake the perfect cake</h3>
+                        <h4>How to bake the perfect cake</h4>
                         <p>July 22, 2018</p>
                     </div>
                 </div>
@@ -144,7 +144,7 @@
                         <img src="../Project1/assets/blog-5.jpeg" alt="">
                     </figure>
                     <div class="relatedText">
-                        <h3>How to bake the perfect cake</h3>
+                        <h4>How to bake the perfect cake</h4>
                         <p>July 22, 2018</p>
                     </div>
                 </div>
@@ -184,13 +184,13 @@
                 <div class="commentForm">
                     <form class="commentFormBox">
                         <label for="name" class="visuallyhidden">Enter your first name:</label>
-                        <input type="name" name="name" placeholder="Name*">
+                        <input type="name" name="name" placeholder="Name*" required=true>
                         <label for="email" class="visuallyhidden">Enter your email:</label>
-                        <input type="email" name="email" placeholder="Email*">
+                        <input type="email" name="email" placeholder="Email*" required=true>
                         <label for="email" class="visuallyhidden">Enter your email:</label>
                         <input type="website" name="website" placeholder="Your Website">
                         <textarea name="messages" placeholder="Comment*" cols="30" rows="4"></textarea>
-                        <button>Submit</button>
+                        <button class="blogSubmit">Submit Comment</button>
                     </form>
                 </div>   
             </div>

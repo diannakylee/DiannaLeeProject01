@@ -1,11 +1,10 @@
-html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
 
-.visuallyhidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
-
-
-.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; } 
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
 
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.visuallyhidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
 
 /* 
 Colours Used:
@@ -22,7 +21,8 @@ html {
 }
 
 .wrapper {
-    max-width: 60%;
+    /* max-width: 960px; */
+    max-width: 65%;
     margin: 0 auto;
 }
 
@@ -33,8 +33,9 @@ body {
 }
 
 p {
-    font-size: 1.2rem;
+    font-size: 1.0rem;
     font-family: "Lora", serif;
+    line-height: 20px;
 }
 
 figure, img, li, ul {
@@ -53,22 +54,19 @@ h1, h2, h3, h4 {
 
 h3 {
     text-align: center;
+    font-size: 2rem;
 }
 
 .greenLine {
     border: 2px solid #64a604;
-    width: 10%;
+    width: 60px;
     margin: 0 auto;
-}
-
-section {
-    clear: both;
 }
 
 i.fab:hover {
     color: #64a604;
+    cursor: pointer;
 }
-
 
 /* ALL NAVIGATION SECTION */
 
@@ -89,13 +87,18 @@ i.fab:hover {
 
 nav ul, nav li {
     list-style: none;
-    padding: 1%; 
+    padding: 1% 1.5%; 
     text-transform: uppercase;
     text-align: right;
 }
 
+.nav li {
+    padding-left: 10px;
+}
+
 .mainHeaderMenu ul li {
     display: inline-block;
+    padding-left: 5px;
 }
 
 .mainHeaderMenu a {
@@ -125,7 +128,7 @@ nav ul, nav li {
 
 /* Does it make sense to use pseudo elements for the font awesome logos? */
 
-.recipeTypes {
+.mainRecipes {
     background: #efefef;
 }
 
@@ -133,11 +136,16 @@ nav ul, nav li {
     width: 50%;
     float: left;
     background: transparent;
-    overflow: hidden;
 }
 
 .recipes1 {
-    padding: 120px;
+    padding: 100px 100px 0 100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.recipes1 p {
+    padding: 15px 0;
 }
 
 .recipes1Button {
@@ -148,11 +156,13 @@ nav ul, nav li {
     color: white;
     font-size: 13px;
     border: none;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
+
+
 .recipes4 {
-    padding: 40px 30px 40px 30px;
+    padding: 40px 30px 0px 30px;
 }
 
 .recipes4 h4 {
@@ -174,7 +184,7 @@ nav ul, nav li {
 .recipeText {
     float: left;
     width: 90%;
-    padding-left: 5%;
+    padding-left: 2%;
 }
 
 
@@ -236,7 +246,6 @@ nav ul, nav li {
     background-color: #dded9a;
     padding: 120px 0;
     text-align: center;
-    line-height: 20px;
 }
 
 blockquote {
@@ -246,24 +255,30 @@ blockquote {
     font-style: italic;
 }
 
+blockquote p {
+    font-size: 1.4rem;
+}
+
 /* Update Blockquote quotations to match the original */
 
 blockquote::before {
-    content: "“";
-    font-size: 80px;
-    font-family: serif;
-    font-style: regular;
+    font-family: "Font Awesome 5 Free";
+    content: "\f10d";
+    font-size: 40px;
+    font-weight: 900;
+    font-style: normal;
     color: #eef6cd;
     position: absolute;
-    top: -10px;
+    top: -20px;
     left: -10px;
 }
 
 blockquote::after {
-    content:"”";
-    font-size: 80px;
-    font-family: serif;
-    font-style: regular;
+    font-family: "Font Awesome 5 Free";
+    content: "\f10e";
+    font-size: 40px;
+    font-weight: 900;
+    font-style: normal;
     color: #eef6cd;
     position: absolute;
     bottom: -20px;
@@ -284,7 +299,6 @@ footer {
 }
 
 footer p {
-    line-height: 20px;
     font-size: 1.1rem;
 }
 
@@ -312,6 +326,11 @@ footer h2 {
     padding-top: 10px;
 }
 
+.footerContent a:hover {
+    color: #64a604;
+    cursor: pointer;
+}
+
 .footerBox2 {
     margin: 0 10px;
 }
@@ -337,17 +356,19 @@ footer h2 {
     font-family: "Lora";
     font-style: italic;
     font-size: 1.2rem;
-    padding: 12px 15px;
+    /* padding: 12px 15px; */
+    height: 40px;
+    padding: 0 15px;
     border: none;
-    width: 85%;
+    width: 80%;
     float: left;
 }
 
 .footerSubscribeButton {
-    width: 15%;
+    width: 20%;
     background-color: #64a604;
     color: white;
-    padding: 9px 0;
+    height: 40px;
     border: none;
 }
 
@@ -368,12 +389,13 @@ footer h2 {
 
 .socialFooter i.fab {
     padding-right: 10px;
+    font-size: 1.2rem;
 }
 
 .greyLine {
     width: 100%;
     border-bottom: 0.5px solid #606060;
-    padding: 5px 0;
+    padding: 2px 0;
 }
 
 .polar {
@@ -382,6 +404,28 @@ footer h2 {
 
 /* BLOG CSS STYLES */
 
+.blog p {
+    color: #666666;
+}
+
+.blogText {
+    margin-top: 100px;
+}
+
+.blogTextHeader {
+    padding-bottom: 10px;
+}
+
+.blogTextHeader h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.blogTextHeader p {
+    font-family: "Raleway";
+    line-height: 1px;
+}
+
 .blogPageHeader {
     background-image: url(../assets/blog-1.jpeg);
     background-size: cover;
@@ -389,39 +433,61 @@ footer h2 {
     height: 70vh;
 }
 
-.blogDottedLine {
-    border-bottom: 1px dotted black;
+.blogTags {
+    border-top: 0.5px solid rgba(204, 204, 204, 0.5);
+    border-bottom: 0.5px solid rgba(204, 204, 204, 0.5);
+    padding: 2% 0;
+    margin-bottom: 2.5%;
+}
+
+.blogTags a {
+    text-decoration: none;
+    color: #666666;
+    padding-left: 2px;
+}
+
+.blogTags a:hover {
+    color: #64a604;
+}
+
+.blogBold {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Raleway";
+    color: #000;
+}
+
+.blogTags i.fab {
+    padding-left: 10px;
 }
 
 /* Blog Body */
 
-.blogAuthor {
-    background-color: #f6f6f6;
-}
-
-.blogAuthor, .blogText {
-    margin-bottom: 25px;
-}
-
-/* .blogText, .blogAuthor {
-    padding: 5%;
-} */
-
 .bloggerPhoto {
-    width: 25%;
+    width: 15%;
     float: left;
 }
 
 .bloggerText {
     float: left;
-    width: 75%;
-    padding: 15px;
+    background-color: #f6f6f6;
+    width: 84%;
+    padding: 5px 15px;
+    margin-left: 1%;
+
 }
 
 /* Blog Related Articles */
 
+.relatedArticles .wrapper {
+    border-top: 0.5px solid rgba(204, 204, 204, 0.5);
+    border-bottom: 0.5px solid rgba(204, 204, 204, 0.5);
+    padding: 2.5% 0;
+    margin-bottom: 2.5%;
+    margin-top: 2.5%;
+}
 
-.relatedArticles h3:nth-child(1) {
+.relatedArticles h3:nth-child(1), .blogComments h3, .blogCommentForm h3, .bloggerText h3 {
     text-align: left;
 }
 
@@ -441,8 +507,6 @@ footer h2 {
 
 /* Blog Content - Comments Section */
 
-/* on this page, take off 5% padding.  Also add max width to wrapper. */
-
 .commentProfile {
     width: 70px;
     float: left;
@@ -455,15 +519,52 @@ footer h2 {
     margin-left: 15px;
     margin-bottom: 15px; 
     padding: 5px 10px;
+    position: relative;
 }
 
-.blogCommentForm {
-    padding: 5%;
+.commentText::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 20%;
+	width: 0;
+	height: 0;
+	border: 12px solid transparent;
+	border-right-color: #f6f6f6;
+	border-left: 0;
+	margin-top: -8px;
+	margin-left: -8px;
 }
 
 .commentForm {
-    background-color: #f6f6f6;
+    padding: 10px 0;
+    font-family: "Lora";
+    font-size: 1.0rem;
+}
+
+.commentFormBox input {
+    width: 32.5%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(204, 204, 204, 0.5);
+}
+
+.commentFormBox textarea {
+    width: 100%;
+    height: 120px;
+    resize: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(204, 204, 204, 0.5);
+}
+
+.blogSubmit {
+    background-color: #64a604;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.2rem;
     padding: 10px 15px;
+    border: none;
 }
 
 
@@ -516,6 +617,10 @@ footer h2 {
     padding: 15px;
 }
 
+#contactForm input:focus, #contactForm textarea:focus {
+    border: 2px solid #64a604;
+}
+
 #contactForm input[type=name] {
     margin-right: 1%;
 }
@@ -547,7 +652,11 @@ footer h2 {
     color: #64a604;
     font-weight: bold;
     font-size: 12px;
-    padding: 10px;
+    padding: 0px 10px;
+}
+
+#contactForm button p {
+    font-family: "Raleway";
 }
 
 #contactForm button:hover {
@@ -557,7 +666,6 @@ footer h2 {
 .contactDetails {
     width: 50%;
     padding-left: 20px;
-    line-height: 20px;
 }
 
 /* .hours p {
