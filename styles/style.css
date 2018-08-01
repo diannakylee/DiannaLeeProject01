@@ -6,15 +6,15 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 
 .visuallyhidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
 
-/* 
-Colours Used:
+
+/* Colours Used:
 Light Green - #eef6cd
 Olive Green - #64a604
-Light Grey - #efefef
-Dark Grey - #2e2e2e
-Darker Grey - #252525
-Text Grey - #999999
-*/
+Background Light Grey - #efefef
+Text Light Grey - #999999
+Text Medium Grey - #666666
+Text Dark Grey - #333333 */
+
 
 html {
     font-size: 62.5%;
