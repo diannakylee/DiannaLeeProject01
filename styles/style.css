@@ -184,11 +184,12 @@ nav ul li a:hover {
 /* Main Recipes Section */
 
 .mainRecipes {
-    background: #efefef;
+    /* background: #efefef; */
 }
 
 .recipes {
     width: 50%;
+    height: 13%;
     float: left;
     background: transparent;
 }
@@ -197,6 +198,8 @@ nav ul li a:hover {
     padding: 100px 100px 0 100px;
     margin: 0 auto;
     text-align: center;
+    background-color: white;
+    /* height: 476px; */
 }
 
 .recipes1 p {
@@ -221,7 +224,9 @@ button:hover {
 }
 
 .recipes4 {
-    padding: 25px 30px
+    height: 495px;
+    padding: 25px 30px;
+    background: #efefef;
 }
 
 .recipes4 h4 {
@@ -835,7 +840,7 @@ header.contactPage {
     line-height: 12px;
 }
 
-.hours h4 ~ p {
+p.hoursRale {
     font-family: "Raleway";
 }
 
