@@ -80,6 +80,10 @@ i.fab:hover {
     cursor: pointer;
 }
 
+a {
+    text-decoration: none;
+}
+
 a:hover {
     color: #64a604;
 }
@@ -170,6 +174,7 @@ nav ul li a:hover {
     background-image: url(../assets/home-1.jpeg);
     height: 100vh;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .homeTestimonials {
@@ -251,7 +256,7 @@ button:hover {
 /* Main Restaurants Section */
 
 .mainRestaurants {
-    padding: 120px 100px 100px 100px;
+    padding: 150px 80px 100px 80px;
 }
 
 .restoSection {
@@ -267,15 +272,16 @@ button:hover {
 .restoImage2 {
     width: 20%;
     position: absolute;
-    top: -73px;
-    right: 110px;
+    top: -80px;
+    right: 125px;
 }
 
 .mainRestaurantText {
     margin: 0 auto;
     margin-top: 50px;
-    padding: 0 10%;
+    padding: 0 8%;
     text-align: center;
+    color: #666666;
 }
 
 
@@ -286,7 +292,6 @@ button:hover {
 }
 
 .gallery ul li {
-    /* float: left; */
     width: 100%;
 }
 
@@ -295,24 +300,6 @@ button:hover {
     float: left;
     position: relative;
 }
-
-/* .gallery ul li figure figcaption {
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.5)
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-}
-
-.gallery figure:hover {
-
-} */
-
-/* .gallery li:hover {
-    
-} */
-
 
 /* Main Testimonials Section */
 
@@ -332,8 +319,6 @@ blockquote {
 blockquote p {
     font-size: 1.4rem;
 }
-
-/* Update Blockquote quotations to match the original */
 
 blockquote::before {
     font-family: "Font Awesome 5 Free";
@@ -359,13 +344,17 @@ blockquote::after {
     right: -10px;
 }
 
-.arrows {
+.arrows i.fas {
     padding: 15px;
     font-size: 40px;
     color: #eef6cd;
 }
 
-.arrows:hover {
+.arrows:hover i.fas {
+    color: white;
+}
+
+.mailTo:hover {
     color: white;
 }
 
@@ -388,8 +377,10 @@ footer h2, footer h4 {
 
 footer h2 {
     color: #64a604;
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 15px;
 }
-
 
 .footerTop {
     padding: 40px 0px 30px 0;
@@ -401,8 +392,13 @@ footer h2 {
     width: calc((100% - 60px) / 3 )
 }
 
-.footerContent {
-    padding-top: 10px;
+.footerContent, .subscribeNow {
+    margin: 10px 0;
+    padding: 10px 0;
+}
+
+.footerContent a {
+    color: #666666;
 }
 
 .footerContent a:hover {
@@ -416,18 +412,16 @@ footer h2 {
 
 .footerBottom {
     background-color: #252525;
-    clear: both;
 }
 
 .footerCopyRight {
     width: 100%;
     padding: 10px;
-    clear: both;
 }
 
-.subscribeNow {
+/* .subscribeNow {
     margin: 10px 0;
-}
+} */
 
 .footerSubscribeEmail {
     background-color: #535353;
@@ -464,7 +458,10 @@ footer h2 {
 .socialFooter {
     clear: left;
     padding-top: 10px;
-    color: white;
+}
+
+.socialFooter a {
+    color: #ffffff;
 }
 
 .socialFooter i.fab {
@@ -488,9 +485,11 @@ footer h2 {
 
 .blogPageHeader {
     background-image: url(../assets/blog-1.jpeg);
-    background-size: cover;
-    background-position: fixed;
-    height: 70vh;
+    height: 55vh;
+    background-size: auto 58%;
+    /* background-size: cover; */
+    background-attachment: fixed;
+    background-repeat: none;
 }
 
 .blogBody {
@@ -571,8 +570,7 @@ footer h2 {
 .relatedArticles .wrapper {
     border-top: 0.5px solid rgba(204, 204, 204, 0.5);
     border-bottom: 0.5px solid rgba(204, 204, 204, 0.5);
-    padding: 1% 0;
-    /* margin-bottom: 2.5%; */
+    padding: 2% 0;
 }
 
 .relatedArticles h3:nth-child(1), .blogComments h3, .blogCommentForm h3, .bloggerText h3 {
@@ -586,6 +584,7 @@ footer h2 {
 
 .relatedPost p {
     font-family: "Lora";
+    font-size: 1.1rem;
 }
 
 .relatedImage {
@@ -595,6 +594,11 @@ footer h2 {
 
 .relatedPost2 {
     margin: 0 15px;
+}
+
+.relatedText h4 {
+    font-size: 1.5rem;
+    margin-top: 15px;
 }
 
 /* Blog Content - Comments Section */
@@ -614,7 +618,7 @@ footer h2 {
     float: left;
     margin-left: 15px;
     margin-bottom: 15px; 
-    padding: 5px 10px;
+    padding: 5px 15px;
     position: relative;
 }
 
@@ -700,10 +704,12 @@ footer h2 {
 
 /* CONTACT CSS STYLES*/
 
-.contactPage {
+header.contactPage {
     background-image: url(../assets/contact-1.jpeg);
-    height: 70vh;
-    background-size: cover;
+    height: 55vh;
+    background-size: auto 60%;
+    background-attachment: fixed;
+    background-repeat: none;
 }
 
 .contactForm h3 {
@@ -750,7 +756,8 @@ footer h2 {
     padding: 15px;
 }
 
-#contactForm input:focus, #contactForm textarea:focus {
+#contactForm input:focus, #contactForm textarea:focus,
+.commentFormBox input:focus, .commentFormBox textarea:focus {
     border-bottom: 2px solid #64a604;
 }
 
@@ -825,10 +832,22 @@ footer h2 {
     margin: 20px 0;
 }
 
+.contactInfo p a {
+    color: #999999;
+}
+
+.contactInfo p a:hover {
+    color: #64a604;
+}
+
 .location p {
     line-height: 12px;
 }
 
 .location {
     margin-bottom: 20px;
+}
+
+.contactImage figure {
+    width: 100%;
 }
